@@ -6,11 +6,11 @@
 \title{Same sex marriage in the US}
 \format{A data frame with columns:
 \describe{
- \item{state}{State Abbreviation}
- \item{status}{Legal status. Either \code{bbs} meaning banned by statute,
+ \item{State}{State Abbreviation}
+ \item{Status}{Legal status. Either \code{bbs} meaning banned by statute,
    \code{nl} meaning not legal, \code{legal}, \code{bbca} meaning banned by
    constitutional ammendment, or \code{dis} meaning disputed.}
- \item{year}{Year status went into effect.}
+ \item{Year}{Year status went into effect.}
 }}
 \source{
 \url{http://www.nytimes.com/interactive/2015/03/04/us/gay-marriage-state-by-state.html}

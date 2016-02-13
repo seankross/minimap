@@ -38,7 +38,7 @@ determine_color <- function(status){
 }
 
 ssm$color <- as.character(sapply(ssm$status, determine_color))
-ssm_2008 <- ssm[which(ssm$year == 2008),]
+ssm_2008 <- ssm[ssm$year == 2008,]
 miniusa(ssm_2008$state, state_colors = ssm_2008$color, state_names = TRUE,
         state_name_colors = rep("white", 51), state_name_cex = .7)
 title(main = "2008", line = -1)

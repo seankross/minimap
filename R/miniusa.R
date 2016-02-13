@@ -1,19 +1,26 @@
-#' Make a tile grid map of the United States of America
+#' Make a tile grid map of The United States of America
 #'
-#' description
-#'
-#' @param states description
-#' @param state_colors description
-#' @param border_colors description
-#' @param state_names description
-#' @param state_name_colors description
-#' @param state_name_cex description
-#' @param font description
+#' @param states A vector of US state postal abbreviations. This vector must be
+#'  some permutation of \code{usa_abb}.
+#' @param state_colors A vector of "colors" in the R sense. For example strings
+#'  (\code{"blue"}), hex codes (\code{"#D0C7B9"}), etc. The ith color in this
+#'  vector will be the color of square that represents the ith element of
+#'  \code{states}.
+#' @param border_colors Like \code{state_colors} but specifying the border
+#'  of the square.
+#' @param state_names Should the postal codes for each state be displayed in the
+#'  center of the state? The default value is \code{TRUE}.
+#' @param state_name_colors Like \code{state_colors} but specifying the color
+#'  of the text displayed in each state.
+#' @param state_name_cex The size of the text displayed inside of each state.
+#' @param font The font of the text displayed inside of each state. The values
+#'  \code{"serif"}, \code{"sans"}, and \code{"mono"} are safest to use. Use
+#'  other fonts at your own risk. If \code{NULL} a sans-style font will be used.
 #'
 #' @export
 #' @examples
 #' \dontrun{
-#'  miniusa(c(state.abb, "DC"), 1:51)
+#'  miniusa(state_abb, 1:51)
 #' }
 miniusa <- function(states, state_colors, border_colors = rep("white", 51),
                     state_names = TRUE, state_name_colors = rep("white", 51),

@@ -28,4 +28,7 @@ plotbox <- function(x, y, color, border_col, n_xboxes, n_yboxes,
     }
   }
 
+  # Restore old par
+  par(xaxs = old_xaxs, yaxs = old_yaxs)
+
 }
