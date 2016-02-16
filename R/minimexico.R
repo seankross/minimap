@@ -28,7 +28,7 @@ minimexico <- function(estados, estados_colors, border_colors = rep("white", 32)
 
   # Make sure all parameters are specified
   if(any(unlist(lapply(list(
-    estados, estados_colors, estados_colors, estados_name_colors
+    estados, estados_colors, border_colors, estados_name_colors
   ), length)) != 32)){
     stop("Please make sure parameters contain exactly 32 elements.")
   }
