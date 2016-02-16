@@ -48,13 +48,29 @@
 #' @format A data frame with columns:
 #' \describe{
 #'  \item{Year}{A value between 1924 and 2015.}
-#'  \item{Syrup}{Maple products expressed as syrup, total (in thousands of gallons).}
-#'  \item{CAD}{Gross value of maple products (in thousands of Canadian dollars).}
-#'  \item{Region}{Postal code abbreviation for territory or province, or
-#'    "Canada" representing production for the entire country.}
+#'  \item{Syrup}{Maple products expressed as syrup, total in thousands of gallons.}
+#'  \item{CAD}{Gross value of maple products in thousands of Canadian dollars.}
+#'  \item{Region}{Postal code abbreviation for territory or province.}
 #' }
 #' @examples
 #' \dontrun{
 #'  maple
 #' }
 "maple"
+
+#' Monthly milk production in Canada
+#'
+#' @source Statistics Canada. Table 003-0011 - Milk production and utilization,
+#' monthly. \url{http://www5.statcan.gc.ca/cansim/}
+#' @format A data frame with columns:
+#' \describe{
+#'  \item{Year}{A value between 1976 and 2015.}
+#'  \item{Month}{A value between 1 and 12.}
+#'  \item{Region}{Postal code abbreviation for territory or province.}
+#'  \item{Kiloliters}{Milk sold off farms in kiloliters.}
+#' }
+#' @examples
+#' \dontrun{
+#'  milk
+#' }
+"milk"

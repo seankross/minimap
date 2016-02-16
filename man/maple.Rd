@@ -7,10 +7,9 @@
 \format{A data frame with columns:
 \describe{
  \item{Year}{A value between 1924 and 2015.}
- \item{Syrup}{Maple products expressed as syrup, total (in thousands of gallons).}
- \item{CAD}{Gross value of maple products (in thousands of Canadian dollars).}
- \item{Region}{Postal code abbreviation for territory or province, or
-   "Canada" representing production for the entire country.}
+ \item{Syrup}{Maple products expressed as syrup, total in thousands of gallons.}
+ \item{CAD}{Gross value of maple products in thousands of Canadian dollars.}
+ \item{Region}{Postal code abbreviation for territory or province.}
 }}
 \source{
 Statistics Canada. Table 001-0008 - Production and farm value of
