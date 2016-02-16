@@ -1,4 +1,4 @@
-library(digest)
+library(png)
 context("Test minicanada()")
 
 
@@ -28,10 +28,10 @@ dev.off()
 
 masters <- system.file(file.path("images", paste0("canada", 1:3, ".png")), package = "minimap")
 
-test_that("The Canada is drawn correctly", {
-  expect_equal(digest(file = canada1, algo = "sha1"), digest(file = masters[1], algo = "sha1"))
-  expect_equal(digest(file = canada2, algo = "sha1"), digest(file = masters[2], algo = "sha1"))
-  expect_equal(digest(file = canada3, algo = "sha1"), digest(file = masters[3], algo = "sha1"))
+test_that("Canada is drawn correctly", {
+  expect_equal(readPNG(canada1), readPNG(masters[1]))
+  expect_equal(readPNG(canada2), readPNG(masters[2]))
+  expect_equal(readPNG(canada3), readPNG(masters[3]))
 })
 
 test_that("minicanada() throws appropriate errors", {

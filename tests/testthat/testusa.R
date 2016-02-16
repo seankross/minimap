@@ -1,4 +1,4 @@
-library(digest)
+library(png)
 context("Test miniusa()")
 
 
@@ -29,9 +29,9 @@ dev.off()
 masters <- system.file(file.path("images", paste0("usa", 1:3, ".png")), package = "minimap")
 
 test_that("The USA is drawn correctly", {
-  expect_equal(digest(file = usa1, algo = "sha1"), digest(file = masters[1], algo = "sha1"))
-  expect_equal(digest(file = usa2, algo = "sha1"), digest(file = masters[2], algo = "sha1"))
-  expect_equal(digest(file = usa3, algo = "sha1"), digest(file = masters[3], algo = "sha1"))
+  expect_equal(readPNG(usa1), readPNG(masters[1]))
+  expect_equal(readPNG(usa2), readPNG(masters[2]))
+  expect_equal(readPNG(usa3), readPNG(masters[3]))
 })
 
 test_that("miniusa() throws appropriate errors", {
