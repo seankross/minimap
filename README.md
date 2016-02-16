@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/seankross/minimap.svg?branch=master)](https://travis-ci.org/seankross/minimap) [![CRAN version](http://www.r-pkg.org/badges/version/minimap)](https://cran.r-project.org/web/packages/minimap/index.html)
+
 # minimap
 
 A beautiful tile grid map is only a function call away! Tile grid maps are a

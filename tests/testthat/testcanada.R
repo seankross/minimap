@@ -9,18 +9,21 @@ setwd(path)
 dir.create("canada_test")
 
 canada1 <- file.path("canada_test", "canada1.png")
-png(canada1)
+png(canada1, width = 480, height = 480, units = "px", pointsize = 12,
+    bg = "white")
 minicanada(canada_abb, 1:13)
 dev.off()
 
 canada2 <- file.path("canada_test", "canada2.png")
-png(canada2)
+png(canada2, width = 480, height = 480, units = "px", pointsize = 12,
+    bg = "white")
 minicanada(canada_abb, 1:13, border_colors = rep("red", 13), 
         pt_names = FALSE)
 dev.off()
 
 canada3 <- file.path("canada_test", "canada3.png")
-png(canada3)
+png(canada3, width = 480, height = 480, units = "px", pointsize = 12,
+    bg = "white")
 minicanada(canada_abb, rep("black", 13), border_colors = rep("white", 13), 
         pt_name_colors = rep("yellow", 13), pt_name_cex = .5, 
         font = "serif")

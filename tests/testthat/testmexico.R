@@ -9,18 +9,21 @@ setwd(path)
 dir.create("mexico_test")
 
 mex1 <- file.path("mexico_test", "mex1.png")
-png(mex1)
+png(mex1, width = 480, height = 480, units = "px", pointsize = 12,
+    bg = "white")
 minimexico(mexico_abb, 1:32)
 dev.off()
 
 mex2 <- file.path("mexico_test", "mex2.png")
-png(mex2)
+png(mex2, width = 480, height = 480, units = "px", pointsize = 12,
+    bg = "white")
 minimexico(mexico_abb, 1:32, border_colors = rep("red", 32), 
            estados_names = FALSE)
 dev.off()
 
 mex3 <- file.path("mexico_test", "mex3.png")
-png(mex3)
+png(mex3, width = 480, height = 480, units = "px", pointsize = 12,
+    bg = "white")
 minimexico(mexico_abb, rep("black", 32), border_colors = rep("white", 32), 
            estados_name_colors = rep("yellow", 32), estados_name_cex = .5, 
            font = "serif")
