@@ -26,10 +26,12 @@ miniusa(usa_abb, rep("black", 51), border_colors = rep("white", 51),
            font = "serif")
 dev.off()
 
+masters <- system.file(file.path("images", paste0("usa", 1:3, ".png")), package = "minimap")
+
 test_that("The USA is drawn correctly", {
-  expect_equal(digest(file = usa1, algo = "sha1"), "e6dc0e728f4de5d611f46e6c56ac6aa9b2fed3c0")
-  expect_equal(digest(file = usa2, algo = "sha1"), "b7a552319d3f4bd5d3d9d0e1e5856f4dfed4d322")
-  expect_equal(digest(file = usa3, algo = "sha1"), "2e7ca543ecfc7f46d46777a957b52d629edd3de4")
+  expect_equal(digest(file = usa1, algo = "sha1"), digest(file = masters[1], algo = "sha1"))
+  expect_equal(digest(file = usa2, algo = "sha1"), digest(file = masters[2], algo = "sha1"))
+  expect_equal(digest(file = usa3, algo = "sha1"), digest(file = masters[3], algo = "sha1"))
 })
 
 test_that("miniusa() throws appropriate errors", {
