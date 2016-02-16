@@ -27,9 +27,9 @@ minimexico(mexico_abb, rep("black", 32), border_colors = rep("white", 32),
 dev.off()
 
 test_that("Mexico is drawn correctly", {
-  expect_equal(digest(file = mex1), "4893f45b9b25810a412cb4f8f85d0eb3")
-  expect_equal(digest(file = mex2), "a52bcb1ded5b81ef706622c1955e64cb")
-  expect_equal(digest(file = mex3), "d982900b3d3cdc76a025c1863fd82a54")
+  expect_equal(digest(file = mex1, algo = "sha1"), "aa027bd8a257af1e6cd0cdfc38ac08d45a5d221c")
+  expect_equal(digest(file = mex2, algo = "sha1"), "d4be901dc77d5ecad1215804f74bc02e65227508")
+  expect_equal(digest(file = mex3, algo = "sha1"), "100c65d70f20a2aff0da5c730c6c20d3b2dbf0c2")
 })
 
 test_that("minimexico() throws appropriate errors", {

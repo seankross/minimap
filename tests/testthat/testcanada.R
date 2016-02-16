@@ -27,9 +27,9 @@ minicanada(canada_abb, rep("black", 13), border_colors = rep("white", 13),
 dev.off()
 
 test_that("The Canada is drawn correctly", {
-  expect_equal(digest(file = canada1), "acc614a387cf7c1ad63229029ad8d323")
-  expect_equal(digest(file = canada2), "2387939675941d64e9d919280f558ca8")
-  expect_equal(digest(file = canada3), "23e5118f32f684db776ca3840d345dd4")
+  expect_equal(digest(file = canada1, algo = "sha1"), "71926537dc0b8ce1ba52627968eef3e2ce1e684e")
+  expect_equal(digest(file = canada2, algo = "sha1"), "1378f0069bf59d3fd26dfce14b3d2cbb83c469b6")
+  expect_equal(digest(file = canada3, algo = "sha1"), "760c5aea5a0e96d247ff7be34b47bb82fde6cb25")
 })
 
 test_that("minicanada() throws appropriate errors", {

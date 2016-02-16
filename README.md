@@ -10,7 +10,7 @@ following news articles:
 
 - [The New York Times](http://www.nytimes.com/interactive/2015/03/04/us/gay-marriage-state-by-state.html)
 - [The Washington Post](https://www.washingtonpost.com/graphics/national/minimum-wage/)
-- [NPR](http://blog.apps.npr.org/2015/05/11/hex-tile-maps.html)
+- [National Public Radio](http://blog.apps.npr.org/2015/05/11/hex-tile-maps.html)
 
 ## Install
 
