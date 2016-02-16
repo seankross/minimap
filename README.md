@@ -30,7 +30,7 @@ minimexico(mexico_abb, colorRampPalette(c("#006847", "white", "#CE1126"))(32),
             estados_name_colors = rep("black", 32))
 ```
 
-![](https://avatars2.githubusercontent.com/u/1819813?v=3&s=460)
+![Mexico](https://raw.githubusercontent.com/seankross/minimap/gh-pages/images/mexico.png)
 
 ```r
 # Legal Status of Same Sex Marriage in the United States (2008)
@@ -55,7 +55,7 @@ miniusa(ssm_2008$State, state_colors = ssm_2008$color, state_names = TRUE,
 title(main = "Legal Status of Same Sex Marriage in 2008", line = -1)
 ```
 
-![](https://avatars2.githubusercontent.com/u/1819813?v=3&s=460)
+![USA](https://raw.githubusercontent.com/seankross/minimap/gh-pages/images/usa.png)
 
 ```r
 # Legal Status of Gay Marriage Over Time
@@ -74,7 +74,7 @@ mtext("Legal Status of Gay Marriage Over Time", outer = TRUE, side = 3, line = -
 par(mai = old_mai, mfrow = c(1, 1))
 ```
 
-![](https://avatars2.githubusercontent.com/u/1819813?v=3&s=460)
+![USA](https://raw.githubusercontent.com/seankross/minimap/gh-pages/images/usam.png)
 
 ```r
 # Forty Years of Canadian Milk Production
@@ -116,4 +116,4 @@ saveGIF(
 )
 ```
 
-![](https://avatars2.githubusercontent.com/u/1819813?v=3&s=460)
+![Canada](https://raw.githubusercontent.com/seankross/minimap/gh-pages/images/canada.gif)
