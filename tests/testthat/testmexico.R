@@ -1,4 +1,3 @@
-library(png)
 context("Test minimexico()")
 
 test_that("Mexico is drawn correctly", {
