@@ -10,6 +10,7 @@ test_that("The USA is drawn correctly", {
 })
 
 test_that("miniusa() throws appropriate errors", {
+  expect_error(miniusa(c(usa_abb, usa_abb), 1:51))
   expect_error(miniusa(usa_abb[1:10], 1:51))
   expect_error(miniusa(usa_abb, 1:10))
   expect_error(miniusa(usa_abb, 1:51, border_colors = 1:10))

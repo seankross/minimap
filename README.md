@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/seankross/minimap.svg?branch=master)](https://travis-ci.org/seankross/minimap) [![CRAN version](http://www.r-pkg.org/badges/version/minimap)](https://cran.r-project.org/web/packages/minimap/index.html)
+[![Build Status](https://travis-ci.org/seankross/minimap.svg?branch=master)](https://travis-ci.org/seankross/minimap)
+[![codecov.io](https://codecov.io/github/seankross/minimap/coverage.svg?branch=master)](https://codecov.io/github/seankross/minimap?branch=master)
+[![CRAN version](http://www.r-pkg.org/badges/version/minimap)](https://cran.r-project.org/web/packages/minimap/index.html)
 
 # minimap
 
@@ -132,7 +134,7 @@ saveGIF(
     milkgif <- milk_year[milk_year$Year == i,]
     minicanada(milkgif$Region, pt_colors = milkgif$color, pt_name_cex = 1.5)
     title(main = paste("Canadian Milk Production in", i), line = -1)
-  },
+  }
 )
 ```
 
@@ -167,7 +169,7 @@ saveGIF(
     one_year <- ssm[ssm$Year == i,]
     miniusa(one_year$State, state_colors = one_year$color)
     title(main = paste("Legal Status of Same Sex Marriage in", i), line = -1)
-  },
+  }
 )
 ```
 
