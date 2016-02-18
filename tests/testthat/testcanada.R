@@ -10,7 +10,7 @@ test_that("Canada is drawn correctly", {
 })
 
 test_that("minicanada() throws appropriate errors", {
-  expect_error(miniusa(c(canada_abb[-1], "NU"), 1:13))
+  expect_error(minicanada(c(canada_abb[-1], "NU"), 1:13))
   expect_error(minicanada(canada_abb[1:10], 1:13))
   expect_error(minicanada(canada_abb, 1:10))
   expect_error(minicanada(canada_abb, 1:13, border_colors = 1:10))
