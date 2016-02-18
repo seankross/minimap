@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/seankross/minimap.svg?branch=master)](https://travis-ci.org/seankross/minimap)
 [![codecov.io](https://codecov.io/github/seankross/minimap/coverage.svg?branch=master)](https://codecov.io/github/seankross/minimap?branch=master)
+[![CRAN version](http://www.r-pkg.org/badges/version/minimap)](https://cran.r-project.org/web/packages/minimap/index.html)
 
 # minimap
 
@@ -18,8 +19,7 @@ following news articles:
 ## Install
 
 ```r
-library(devtools)
-install_github("seankross/minimap")
+install.packages("minimap")
 ```
 
 ## Demos
