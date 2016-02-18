@@ -1,6 +1,6 @@
 language: R
-sudo: required
-warnings_are_errors: true
+cache: packages
+sudo: false
 
 r_github_packages:
   - jimhester/covr
