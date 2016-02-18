@@ -1,19 +1,14 @@
-language: r
-warnings_are_errors: true
+language: R
 sudo: required
+warnings_are_errors: true
 
-env:
- global:
-   - CRAN: http://cran.rstudio.com
+r_github_packages:
+  - jimhester/covr
 
-before_install: echo "options(repos = c(CRAN='http://cran.rstudio.com'))" > ~/.Rprofile
+after_success:
+  - Rscript -e 'covr::codecov()'
 
 notifications:
   email:
     on_success: always
     on_failure: always
-
-r_github_packages:
-  - jimhester/covr
-after_success:
-  - Rscript -e 'library(covr);codecov()'
