@@ -3,3 +3,7 @@
 export(minicanada)
 export(minimexico)
 export(miniusa)
+importFrom(graphics,par)
+importFrom(graphics,plot)
+importFrom(graphics,rect)
+importFrom(graphics,text)

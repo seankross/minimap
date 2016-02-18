@@ -6,6 +6,7 @@
 # @param text_ Text in each box. (Optional)
 # @param text_col Color of text in each box. (Optional)
 
+#' @importFrom graphics par plot rect text
 plotbox <- function(x, y, color, border_col, n_xboxes, n_yboxes,
                     text_ = NULL, text_col, text_cex = 1, text_font = NULL){
   # Store old par
